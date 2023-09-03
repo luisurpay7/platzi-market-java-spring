@@ -22,6 +22,22 @@ public class Compra {
     @Column(name = "id_compra")
     private Integer idCompra;
 
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public List<ComprasProducto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<ComprasProducto> productos) {
+        this.productos = productos;
+    }
+
     @Column(name = "id_cliente")
     private String idCliente;
 
